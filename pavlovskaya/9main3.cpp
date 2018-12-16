@@ -17,6 +17,7 @@ int main()
     for (i=0; i<10; i++)
         for (j=0; j<10; j++)
             cin>>a[i][j];
+    cout<<"полученная матрица\n";
     for (i=0; i<10; i++)
         for (j=0; j<10; j++){
             if(i-1>=0&&j-1>=0){
@@ -56,7 +57,7 @@ int main()
             sum=0;
             counter=0;
             
-            cout<<"полученная матрица\n"<<a[i][j];
+           cout<<a[i][j];
             
         }
        
