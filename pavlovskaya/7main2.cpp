@@ -29,16 +29,16 @@ int main()
     for ( int counter = 0; counter < n; counter++ )
         cin >> array[counter];
     
-  
+    
     for(int counter = 0; counter<n-1; counter++)
         if ((array[counter+1]>array[counter])){
-            m = array[counter+1];
-         
+            m = counter+1;
+            
         }
     
-
     
-   
+    
+    
     
     cout << "максимальный элемент массива=" << m << endl;
     
@@ -57,13 +57,14 @@ int main()
             
             break;
         }
-      y=t+3;
+    y=t+3;
     
-
-
+    
+    
     for (int i=t+1; i<r; i++){
         s=s*array[i];
     }
+    
     
     cout<<"произведение между нулевыми элементами массива равно: "<<s<<endl;
     
