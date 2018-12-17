@@ -19,47 +19,51 @@ int main ()
     setlocale(0, "rus");
     float x, a, b, f, c, dk, xx;
     
-    cout << "ввести начальное значение x=";
+    cout << "ввести начальное значение x= ";
     cin >> x;
-    cout << "введите конечное знаечение x=";
+    cout << "введите конечное знаечение x= ";
     cin >> xx;
-    cout << "введите а=";
+    cout << "введите а= ";
     cin >> a;
-    cout << "введите b=";
+    cout << "введите b= ";
     cin >> b;
-    cout << "введите c=";
+    cout << "введите c= ";
     cin >> c;
-    cout << "введите шаг dx=";
+    cout << "введите шаг dx= ";
     cin >> dk;
-    
+    int ac =a, bc=b, cc=c;
     while (x<xx)
     {
-    
-    
-    if (x < 5 && (c>0||c<0)){
-        f = (-a*x*x - b);
-    }
-    else{
-        if (c > 0 && a == 0){
-            f = (a - x)/(c*x);
-            }
-        else{
-            f = x/c;
+        
+        
+        if (x < 5 && (c>0||c<0)){
+            f = (-a*x*x - b);
         }
-    }
-    cout << f << endl;
+        else{
+            if (c > 0 && a == 0){
+                f = (a - x)/(c*x);
+            }
+            else{
+                f = x/c;
+            }
+        }
+        
+        if(((ac||bc)^(ac||cc)) !=0)
+            cout << f << endl;
+        else
+            cout << (int)f << endl;
         
         (x = x + dk);
     }
     
-   
     
-        
+    
+    
     
     return 0;
-   
     
     
     
-
+    
+    
 }
