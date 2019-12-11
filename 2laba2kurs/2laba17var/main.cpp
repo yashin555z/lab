@@ -27,6 +27,7 @@ public:
         this->minuta=minuta;
         this->name1=name1;
         this->name2=name2;
+        this->dlina=dlina;
         dataa=den+(mes*30)+(god*365);
         time=chas*60+minuta;
         dv=dataa*1440+time;
