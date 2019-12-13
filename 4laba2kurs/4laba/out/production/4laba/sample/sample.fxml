@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.0" minWidth="10.0" prefWidth="453.0" />
+      <ColumnConstraints maxWidth="120.0" minWidth="41.0" prefWidth="120.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="100.0" prefHeight="200.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Label fx:id="koreya" alignment="CENTER" maxHeight="1000.0" maxWidth="1000.0" prefHeight="199.0" prefWidth="1000.0" style="-fx-background-color: #343B29;" text="Label" textFill="#fdbdba" GridPane.rowIndex="1" GridPane.rowSpan="2" />
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="10000.0" spacing="5.0" style="-fx-background-color: #CEFF1D;" GridPane.columnSpan="2">
+         <children>
+            <Button fx:id="knopka" minWidth="120.0" mnemonicParsing="false" onAction="#vivodspiska" prefHeight="27.0" prefWidth="109.0" text="Вывод списка" />
+            <TextField fx:id="newnom" />
+            <TextField fx:id="newname1" />
+            <TextField fx:id="newname2" layoutX="321.0" layoutY="19.0" />
+            <TextField fx:id="newday" layoutX="356.0" layoutY="19.0" />
+            <TextField fx:id="newmonth" layoutX="282.0" layoutY="19.0" />
+            <TextField fx:id="newyear" layoutX="400.0" layoutY="19.0" />
+            <TextField fx:id="newhour" layoutX="413.0" layoutY="19.0" />
+            <TextField fx:id="newminute" layoutX="422.0" layoutY="19.0" />
+            <TextField fx:id="newdlina" layoutX="450.0" layoutY="27.0" />
+            <Button minWidth="80.0" mnemonicParsing="false" onAction="#pluso" text="Добавить" />
+         </children></HBox>
+      <VBox prefHeight="200.0" prefWidth="98.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" onAction="#sortpd" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #c5E384;" text="сортировка по давности" textAlignment="CENTER" textFill="#4a18ff" wrapText="true">
+               <font>
+                  <Font name="Hiragino Sans W7" size="9.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#sortpdl" prefHeight="42.0" prefWidth="132.0" style="-fx-background-color: #DAD871;" text="Сортировка по длительности" textAlignment="CENTER" textFill="#ff00b8" wrapText="true">
+               <font>
+                  <Font name="Hiragino Sans W9" size="8.0" />
+               </font></Button>
+            <TextField />
+            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="171.0" text="Button" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
